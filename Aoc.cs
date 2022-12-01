@@ -11,6 +11,7 @@ namespace Aoc {
 					break; 
 			}
 		}
+
 		// Main Function for day 1
 		static void day1() {
 			string[] data = File.ReadAllLines("./data/day1.txt");
@@ -18,12 +19,12 @@ namespace Aoc {
 			List<int> listOfSums = new List<int>(); 
 
 			for (int i = 0; i < data.GetLength(0); i++) {
-				// check if newline, its a hack, and it works with the data we have. 
+  			// this is a hack to check if the line is empty.
 				if (data[i].Length < 1) {
 					listOfSums.Add(sum); 
 					sum = 0; 
 				} else {
-					sum += int.Parse(data[i]); 
+					sum += int.Parse(data[i]);
 				}
 			}
 
