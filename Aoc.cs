@@ -10,7 +10,6 @@ namespace Aoc {
 					Console.WriteLine("Failed to run the provided day : " + day);
 					break; 
 			}
-		
 		}
 		// Main Function for day 1
 		static void day1() {
